@@ -1,0 +1,126 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/** {
+	text-transform: uppercase;
+	font-family: Helvetica;
+	text-align: center;
+}*/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+#soundcloud-search {
+	float:right;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+#search-term {
+  width: 200px;
+}
+
+.navbar-header, .container-fluid {
+	height:100%;
+}
+
+.navbar-fixed-left {
+  width: 190px;
+  position: fixed;
+  outline: 1px dotted black;
+  height: 100%;
+  background: #fff;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 145px;
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 160px;
+}
+
+.navbar-logo img {
+	float: left;
+	width:130px;
+	height:130px;
+}
+
+.navbar-inverse {
+	border: none;
+}
+
+li {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#article-one {
+    padding-top: 50px;
+}
+
+/*.content-section {
+    padding-top: 40px;
+}*/
+
+#post {
+	padding-left: 150px;
+}
+
+iframe {
+	width: 100%;
+}
+
+.pagination {
+	padding-top: 250px;
+	position: relative;
+}
+
+footer {
+    padding: 30px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/******************************************
+/* MEDIA QUERY
+/*******************************************/
