@@ -36,6 +36,10 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 
 
 /******************************************
@@ -138,7 +142,13 @@ nav.sidebar, .main{
   width:100%;
 }
 
-iframe {
+.post h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.post iframe {
   width: 100%;
   padding-bottom: 20px;
   border-bottom: 2px solid #9d9d9d;
@@ -161,7 +171,7 @@ iframe {
 }
 
 .flex-item {
-  background: green;
+  background: yellow;
   /*padding: 5px;*/
   padding-top: 0;
   width: 300px;
@@ -171,12 +181,20 @@ iframe {
   margin-right: -200px;
   margin-bottom: -50px;
   
+  color: black;
+  font-weight: 300;
+  font-size: 0.9em;
+  text-align: center;
+}
 
-  /*line-height: 150px;
-  color: white
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;*/
+.flex-item iframe {
+  width: 300px;
+  height: 150px;
+}
+
+.flex-item p {
+  text-align: center;
+  display: inline;
 }
 
 
