@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- flexible character encoding for web pages -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- set the viewport for responsive design media query -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Music Site</title>
+</head>
+<body>
+<!-- search form on top right of page -->
+	<div class="search-top">
+		<form class="form-inline" id="soundcloud-search"method="get" action="app.js">
+            <div class="form-group">
+            	<input type="text" class="form-control" id="search-term" placeholder="search">
+            </div>
+            <button type="submit" class="btn btn-default">
+            <!--<a href="search.html">-->Search</button>
+        </form>
+	</div>
+	<div>
+        <table class="table table-striped" id="results-table">
+          <thead>
+            <tr>
+              <th>Artwork</th>
+              <th>Track</th>
+              <th>Genre</th>
+              <th>Preview</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+
+
+
+
+
+	
+
+	<script src="js/jquery-2.1.4.js"></script>
+	<!-- import SDK and Soundcloud API -->
+	<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

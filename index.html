@@ -17,31 +17,36 @@
 <body>
 	<!-- search form on top right of page -->
 	<div class="search-top">
-		<form class="form-inline" id="soundcloud-search">
+		<form class="form-inline" id="soundcloud-search" method="get" action="/search">
             <div class="form-group">
             	<input type="text" class="form-control" id="search-term" placeholder="search">
+          
+            	<button type="submit" class="btn btn-default"><a href="search.html">Search</a></button>
             </div>
-            <button type="submit" class="btn btn-default">Search</button>
         </form>
 	</div>
 
-	<!-- left nav bar -->
+	<!-- Navigation -->
+	<!-- left nav bar --> 
 	<nav class="navbar navbar-inverse navbar-fixed-left" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-logo" href="#">
+				<a class="navbar-logo" href="index.html">
 					<img alt="Logo" src="images/peace.jpg"/>
 				</a>
 				<ul class="nav navbar-nav">
-					<li><a href="#">News</a></li>
+					<!-- <li><a href="#">News</a></li> -->
 					<li><a href="#">Tracks</a></li>
-					<li><a href="#">Mixtapes</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="mixes.html">Mixes</a></li>
+					<li><a href="playlists.html">Playlists</a></li>
+					<li><a href="about.html">About</a></li>
 				</ul>
-			</div>	
-		</div>
-	</nav>
-	
+			</div>
+
+        </div>
+        <!-- /.container -->
+    </nav>
+		
 	<!-- <div class="container">
  		<div class="row">
    			<div class="col-lg-6">
@@ -50,55 +55,141 @@
 	</div> -->
 
 	<!-- Music Posts Section -->
-    <section id="post" class="container content-section">
-    	<article id="article-one">
-	        <div class="row">
-	            <div class="col-lg-8 col-lg-offset-2">
-	                <h2>Post #1</h2>
-	                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-	                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-	                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
-	            </div>
-	            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/257286776&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-	        </div>
-	    </article>
-    </section>
-    <hr>
+    <section class="container content-section">
+    	<article class="list-of-posts">
+	        <div class="post">
+		        <div class="row">
+		            <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+		            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                <h2>RHODA - FOR YOU (FLAMINGOSIS REMIX)</h2>
+		            	<iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/257286776&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+		            </div>
+		        </div>
+		    </div>
 
-    <!-- Music post section -->
-    <section id="post" class="container content-section">
-    	<article id="article-two">
-	        <div class="row">
-	            <div class="col-lg-8 col-lg-offset-2">
-	                <h2>Post #2</h2>
-	                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-	                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-	                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
-	            </div>
+		   	<div class="post">
+		        <div class="row">
+	            	<!-- <div class="col-lg-8 col-lg-offset-2"> -->
+	            	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	                	<h2>ASHAYA - NO WORRIES (THE PURSUIT)</h2>
+	                	<iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/239861724&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+	            	</div>
+	        	</div>
+		    </div>	    
+
+		    <div class="post">
+		    	<div class="row">
+	            	<!-- <div class="col-lg-8 col-lg-offset-2"> -->
+	            	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	                	<h2>NOSAJ THING - REALIZE (DO IT AGAIN KELS EDIT)</h2>
+	                	<iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/238153668&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+	            	</div>
+	        	</div>
 	        </div>
+	        
+	        <div class="post">
+		        <div class="row">
+		            <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+		            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                <h2>SYD - SMILE MORE</h2>
+		                <iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/234985339&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+		            </div>
+		        </div>
+		    </div>
+
+		    <div class="post">
+			    <div class="row">
+		            <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+		            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                <h2>PATRICK PERKINS X GLUE70 - TURN THE PAGE</h2>
+		                <iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/231288425&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+		            </div>
+		        </div>
+		    </div>
+		    
+		    <div class="post">
+			    <div class="row">
+		            <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+		            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                <h2>KARTELL - GOLD</h2>
+		                <iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/231380272&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+		            </div>		           	
+		        </div>
+		    </div>
+		    
+		    <div class="post">
+			    <div class="row">
+		            <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+		            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                <h2>MARS TODAY - SUMMATIME FINE (PROD. BY ESTA)</h2>
+		                <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/226767236&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+		            </div>		           	
+		        </div>
+		    </div>
+		    
+		    <div class="post">
+			    <div class="row">
+		            <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+		            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                <h2>THE INTERNET MUSIC - DONTCHA</h2>
+		                <iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/111317831&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+		            </div>		           	
+		        </div>
+		    </div>
+		    
+		    <div class="post">
+			    <div class="row">
+		            <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+		            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                <h2>LAWKYZ - THE MAN WITH THE WAX HAND FT. RACECAR</h2>
+		                <iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169012212&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+		            </div>		           	
+		        </div>
+		    </div>
+		    
+		    <div class="post">
+			    <div class="row">
+		            <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+		            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		                <h2>THE INTERNET MUSIC - DONTCHA</h2>
+		                <iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/111317831&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+		            </div>		           	
+		        </div>
+		    </div>
+		    
 	    </article>
+
+	    <!-- Pagination -->
+    	<div class="pagination">
+
+    	</div>
+
     </section>
+
+
     
-	<!-- Pagination-->
-	<nav>
-		<ul class="pagination">
-			<li>
-				<a href="#" aria-label="Previous">
-					<span aria-hidden="true">&laquo;</span>
-				</a>
-			</li>
-			<li><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">5</a></li>
-			<li>
-				<a href="#" aria-label="Next">
-					<span aria-hidden="true">&raquo;</span>
-				</a>
-			</li>
-		</ul>
-	</nav>
+
+
+
+
+	
+
+
+		
+
+
+
+    
+
+    
+
+  
+   
+    
+
+
+
+
 
 
 
@@ -110,8 +201,11 @@
 	
 
 	<script src="js/jquery-2.1.4.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
 	<!-- import SDK and Soundcloud API -->
 	<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+	<script src="js/paginate.js"></script>
+	<!-- <script src="js/boostrap.min.js"></script> -->
     <script src="js/app.js"></script>
 
 </body>
