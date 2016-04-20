@@ -1,8 +1,9 @@
+// set up self-invoking function
 (function($) {
 	
 	// Function called customPaginate 
 	// The user will able to pass in set of options that will override whatever will happen inside the pagination function
-	$.fn.customPaginate = function(options){
+	$.fn.customPaginate = function(options) { // Assign anonymous function which will accept options
 		
 		// Set paginationContainer variable
 		var paginationContainer = this;
@@ -13,14 +14,15 @@
 		// Whatever is passed in options will override default
 		var defaults = {
 			// Have an option for a user to set
-			// How many items on a single a page?
+			// How many items on a single a page
 			itemsPerPage : 7
 		};
 
 		// Store result in settings
 		var settings = {};
 
-		// Options will override what's in default and then that will also override what's in settings; since settings is an empty object it will always be given the result of this overriding situation here 
+		// Options will override what's in default and then that will also override what's in settings
+		// Since settings is an empty object it will always be given the result of this overriding situation here 
 		$.extend(settings, defaults, options);
 
 		var itemsPerPage = settings.itemsPerPage;
@@ -72,4 +74,4 @@
 		});
 	}
 	
-}(jQuery));
+}(jQuery)); //pass into jQuery namespace; we pass this here so we can use the $ sign inside our script

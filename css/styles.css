@@ -45,102 +45,21 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
-
-/* SEARCH */
-#soundcloud-search {
-  float:right;
-  padding-right: 10px;
-  padding-top: 10px;
+.navbar-header img {
+  height: 50px;
+  width: 65px;
+  background-color: white;
 }
-
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
-}
-
-#map {
-  height: 580px;
-}
-
-#search-term {
-  width: 200px;
-}
-
-/* NAVIGATION */
-.navbar-header, .container-fluid {
-  height:100%;
-}
-
-.navbar-fixed-left {
-  width: 190px;
-  position: fixed;
-  outline: 1px dotted black;
-  height: 100%;
-  background: #fff;
-}
-
-.navbar-fixed-left .navbar-nav > li {
-  float: none;  /* Cancel default li float: left */
-  width: 145px;
-}
-
-.navbar-fixed-left + .container {
-  padding-left: 160px;
-}
-
-
-/* this makes sure the main content posts don't shift left into the left-nav bar */
-.container.content-section {
-  padding-left: 80px;
-  margin-left: 100px;
-  margin-right: 60px;
-}
-
-.navbar-logo img {
-  float: left;
-  width:130px;
-  height:130px;
-}
-
-.navbar-inverse {
-  border: none;
-}
-
-nav.sidebar.navbar {
-  border-radius: 0px;
-}
-
-nav.sidebar, .main{
-  -webkit-transition: margin 200ms ease-out;
-  -moz-transition: margin 200ms ease-out;
-  -o-transition: margin 200ms ease-out;
-  transition: margin 200ms ease-out;
-}
-
-.nav li {
-  text-align: center;
-  text-transform: uppercase;
-  color: #9d9d9d;
-}
-
-/*#article-1 {
-    padding-top: 50px;
-}*/
 
 /* MAIN CONTENT */
-.row {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .content-section {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
-.post {
+/*.post {
   padding-left: 10px;
   width:100%;
-}
+}*/
 
 .post h2 {
   font-family: 'Open Sans', sans-serif;
@@ -156,8 +75,10 @@ nav.sidebar, .main{
 
 /* MIXES PAGE */
 .flex-container {
-  padding: 0;
-  margin: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
   list-style: none;
 
   display: -webkit-box;
@@ -170,16 +91,30 @@ nav.sidebar, .main{
   justify-content: space-around;
 }
 
+h4 {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left:20px;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  color: black;
+  padding-top: 50px;
+}
+
 .flex-item {
   background: yellow;
   /*padding: 5px;*/
   padding-top: 0;
-  width: 300px;
-  height: 150px;
-  margin-top: 100px;
-  margin-left: 200px;
+  width: 330px;
+  height: 300px;
+  margin-top: 50px;
+  margin-left:5px;
+  margin-right:5px;
+  /*margin-left: 200px;
   margin-right: -200px;
-  margin-bottom: -50px;
+  margin-bottom: -50px;*/
   
   color: black;
   font-weight: 300;
@@ -188,8 +123,8 @@ nav.sidebar, .main{
 }
 
 .flex-item iframe {
-  width: 300px;
-  height: 150px;
+  width: 330px;
+  height: 300px;
 }
 
 .flex-item p {
@@ -202,7 +137,7 @@ nav.sidebar, .main{
 
 /*PAGINATION*/
 .pagination {
-  padding-top: 20px;
+  padding-top: 40px;
   position: relative;
   padding-left: 50%;
 }
@@ -221,14 +156,15 @@ nav.sidebar, .main{
 .pagination li {
   list-style: none;  
   float: left;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border: 1px solid white;
   /*background-color: blue;*/
   background-color: #66ffe0;
   color: white;
   text-align: center;
   cursor: pointer;
+  padding-top: 3px;
 }
 
 .pagination li:hover {
@@ -248,12 +184,20 @@ nav.sidebar, .main{
   color: black !important;  
 }
 
+
+
 /* FOOTER */
-footer {
-  padding: 200px 0;
+#footer {
+  padding: 0;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  position: relative;
+
 }
 
-footer p {
+#footer p {
+  padding-top: 40px;
   text-align: center;
 
 }
