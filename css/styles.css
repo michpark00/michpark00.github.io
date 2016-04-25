@@ -60,7 +60,7 @@ body {
 .navbar-default {
     box-shadow: none;
     background: none;
-    border: 2px solid #4d4d4d;
+    border: 2px solid #000;
     position: relative;
     padding-bottom: 0;
     letter-spacing: 0.5px;
@@ -74,7 +74,7 @@ body {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #4d4d4d;
+    border-color: #000;
 }
 
 
@@ -88,14 +88,19 @@ body {
 
 .post {
     width: 100%;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #9d9d9d;
+    padding-bottom: 0px;
 }
 
 .post h2 {
     font-family: 'Exo 2', sans-serif;
     font-weight: 400;
     letter-spacing: 0.5px;
+}
+
+.post iframe {
+    border-bottom: 2px solid #9d9d9d;
+    padding-bottom: 20px;
+    width: 100%;
 }
 
 
@@ -118,10 +123,9 @@ h4 {
 
     text-align: center;
     color: #000;
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.5px;
-    font-size: 1.125em;
+    font-size: 1.1875em;
 }
 
 .responsive-boxes p {
