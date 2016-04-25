@@ -15,7 +15,7 @@
 		var defaults = {
 			// Have an option for a user to set
 			// How many items on a single a page
-			itemsPerPage : 7
+			itemsPerPage : 6
 		};
 
 		// Store result in settings

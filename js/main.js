@@ -1,21 +1,22 @@
-$(function(){
+$(function() {
 
-  $(document).ready(function() {
-
-    // call pagination script
+    // Call pagination script
     $('.pagination').customPaginate({
-      itemsToPaginate : ".post",
-      activeClass : "active-class"
+        itemsToPaginate : ".post",
+        activeClass : "active-class"
     });
 
-
-
-    $('.nav .navbar-nav a').on('click', function(){
-        $('.navbar-toggle').click() //bootstrap 3.x by Richard
+    // Toggle navigation
+    /* When you shrink the window size or on small screens, 
+    a toggle menu button (hamburger) appears that, when, clicked,
+    expands to a dropdown menu.*/
+    $('.nav .navbar-nav a').on('click', function() {
+        $('.navbar-toggle').click(); //bootstrap 3.x by Richard
     });
-  });
+    
+});
 
-}(jQuery));
+
     
 
 
